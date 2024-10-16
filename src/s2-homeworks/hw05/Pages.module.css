@@ -1,0 +1,7 @@
+.Pages > div {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 70px 70px 0;
+    font-family: 'Montserrat', sans-serif;
+}
