@@ -1,23 +1,44 @@
 .item {
+    border-bottom: #E5E5E5 1px solid;
 }
 
 .item:last-of-type {
+    border: none;
 }
 
 .users {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-weight: 300;
 }
 
 .container {
+    max-width: 600px;
 }
 
 .thead {
+    padding: 5px;
+    background: #E5E5E5;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .nameCol {
+    padding: 10px 0 10px 16px;
+    width: 50%;
+    font-size: 14px;
 }
 
 .ageCol {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
 }
