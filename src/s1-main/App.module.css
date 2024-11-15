@@ -11,6 +11,7 @@
 .hw {
     margin-top: 34px;
     position: relative;
+    min-height: 336px;
 }
 .hw:after {
     content: "";

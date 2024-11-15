@@ -1,3 +1,44 @@
 .loader {
-    /*свг и/или анимация*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90px;
+    width: 90px;
+    box-sizing: border-box;
+    background: conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, #512DE4 360deg);
+    border-radius: 50%;
+    animation: 1s rotate infinite linear;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 72px;
+    width: 72px;
+    background: white;
+    border-radius: 48px;
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 9px;
+    width: 9px;
+    background: #512DE4;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
