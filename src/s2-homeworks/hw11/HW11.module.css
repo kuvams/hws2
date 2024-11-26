@@ -2,7 +2,11 @@
 }
 
 .wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .number {
+    min-width: 27px;
 }
