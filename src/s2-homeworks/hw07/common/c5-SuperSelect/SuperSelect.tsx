@@ -14,6 +14,7 @@ type DefaultSelectPropsType = DetailedHTMLProps<
 type SuperSelectPropsType = DefaultSelectPropsType & {
     options?: optionType[]
     onChangeOption?: (option: number) => void
+    selectedOptionId?: number
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = ({
@@ -21,8 +22,10 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     className,
     onChange,
     onChangeOption,
+    selectedOptionId,
     ...restProps
 }) => {
+
     const mappedOptions: JSX.Element[] = options
         ? options.map((o) => (
               <option
@@ -30,6 +33,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                   className={s.option}
                   key={o.id}
                   value={o.id}
+                  selected={o.id === selectedOptionId}
               >
                   {o.value}
               </option>
@@ -48,6 +52,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
             className={finalSelectClassName}
             onChange={onChangeCallback}
             {...restProps}
+
         >
             {mappedOptions}
         </select>

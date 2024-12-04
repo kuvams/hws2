@@ -19,5 +19,16 @@ html {
 }
 
 .select {
+    background-color: var(--background);
+    color: var(--color);
+    height: 36px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
 
+.hwContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: max-content;
 }
