@@ -4,8 +4,11 @@
 .input {
     width: 372px;
     height: 36px;
+    font-size: 14px;
+    font-weight: 400;
     border-radius: 5px;
     border: 1px solid #D1D1D1;
+    padding: 8px 12px;
 }
 
 .inputWrapper {

@@ -1,7 +1,11 @@
 .tech {
-
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
 }
 
 .loading {
-
+    padding-left: 322px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 300;
 }
